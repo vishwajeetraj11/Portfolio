@@ -1,0 +1,49 @@
+@keyframes backAn {
+    0%   { background-position:0% 100%; }
+    50%   { background-position:100% 100%; }
+    100%   { background-position:0% 100%; }
+ }
+ 
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    50%{
+        transform: translate(1rem);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    50%{
+        transform: translate(-1rem);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translate(0);
+    }
+}
+
+
+@keyframes moveInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    100% {
+        opacity: 100%;
+        transform: translate(0);
+    }
+}

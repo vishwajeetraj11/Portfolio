@@ -1,0 +1,41 @@
+.contact {
+    padding: 15rem 0;
+   
+    &__img-container{
+        width: 90%;
+       transform: translateY(5rem);
+        overflow: hidden
+    }
+
+    &__img{
+        width: 100%;
+    }
+
+    &__container{
+        background-color: #fff;
+        padding: 3rem;
+        border-radius: 20px;
+        box-shadow: $box-shadow-1;
+        width: 90%;
+
+        @include respond(tab-port) {
+            width: 100%; 
+        }
+    
+    }
+
+    &__item{
+        margin-bottom: 2.2rem;
+        &-title{
+            font-size: 1.8rem;
+            margin-bottom: 0.1rem;
+        }
+
+        &-description{
+            font-size: 1.5rem;
+        }
+    }
+
+}
+
+

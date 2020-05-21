@@ -1,0 +1,201 @@
+.header .row {
+    @include respond(phone) {
+        max-width: 70rem;  
+    }
+ 
+}
+
+.header{
+    height: 90vh;
+    position: relative;
+    &__title {
+
+        &--1{  background-image: url('../img/ab.png'); }
+        // &--2{  background-image: url('../img/ab.png'); }
+        // &--3{  background-image: url('../img/ab.png'); }
+       
+        &-container{
+            width: 100%;
+        }
+
+        &-text {
+            font-weight: 1000;
+           line-height: 1;
+           
+          
+        }
+        // background-size: cover;
+        animation: backAn 20s infinite;
+        font-size: 9rem;
+        padding: 1rem 0.3rem;
+        -webkit-background-clip: text;
+         color: transparent;
+         text-align: center;
+              
+        @include respond(tab-port) {
+            font-size: 6rem;
+        }
+        @include respond(phone) {
+            font-size: 4rem;
+            margin-bottom: .5rem;
+        }
+           
+        //  text-transform: uppercase;
+
+         ::selection {
+             color: transparent;
+             background-color: $color-white;
+         }
+    }
+
+    &__text {
+        font-size: 4rem;
+        @include respond(tab-port) {
+            font-size: 3rem;
+        }
+        @include respond(phone) {
+            font-size: 2.3rem;
+        }
+    }
+
+
+    &__social-links {
+    
+    }
+}
+
+.social-links-container {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: $color-white;
+    padding: 2rem;
+    justify-content: space-around;
+    box-shadow: $box-shadow-1;
+
+    @include respond(phone) {
+        width: 100%;
+        padding: 1.2rem;
+    }
+}
+
+.social-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+
+    @include respond(tab-port) {
+        width: 2rem;
+        height: 2rem;
+    }
+    @include respond(tab-port) {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+.pos {
+    @include centerElementAbsolute;
+}
+
+.twitter, .github, .linkedin, .behance, .paypal, .instagram, .facebook, .dribbble{
+    transition: all 0.2s;
+}
+
+.twitter:hover{fill: #1DA1F2;}
+.facebook:hover{fill: #4267B2;}
+.github:hover{fill: #211F1F;}
+.behance:hover{fill: #053eff;}
+.linkedin:hover{fill: #1DA1F2;}
+.paypal:hover{fill: #169BD7;}
+.dribbble:hover{fill: #ea4c89;}
+.instagram:hover{fill: #fb3958 ;}
+
+.header__text--2{
+    font-size: 2.6rem;
+    margin-top: -1rem;
+    font-weight: 400;
+
+     @include respond(tab-port) {
+            font-size: 2rem;
+        }
+
+        @include respond(phone) {
+            margin-top: 0.8rem;
+            font-size: 1.8rem;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .header {
+//     position: relative;
+//     height: 95vh;
+//     background-image: linear-gradient(to right bottom,
+//     rgba($color-primary-light , .8),
+//     rgba( $color-primary-dark, .8)),
+//     url('./../img/hero-small.jpg');
+//     background-size: cover;
+//     background-position: bottom;
+    
+
+//     @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+//     only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+//     only screen and (min-width: 125em) {
+//         background-image: linear-gradient(to right bottom,
+//         rgba($color-primary-light , .8),
+//         rgba( $color-primary-dark, .8)),
+//         url('./../img/hero.jpg');
+//     }
+
+//     @supports ( (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) ){
+//         -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100% );
+//         clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100% );
+//     }
+
+//     @include respond(tab-port) {
+//         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100% );
+//         clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100% );
+//     }
+//     @include respond(phone) {
+//         -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100% );
+//         clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100% );
+//     }
+
+//     &__logo {
+//         height: 3.5rem;
+
+//         &-box{
+//             position: absolute;
+//             top: 4rem;
+//             left: 4rem;
+//         }
+//     }
+
+//     &__text-box{
+//         position: absolute;
+//         text-align: center;
+//         top: 40%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//     }
+// }
+
