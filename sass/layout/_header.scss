@@ -2,6 +2,11 @@
     @include respond(phone) {
         max-width: 70rem;  
     }
+    
+    @include respond(tab-port) {
+        max-width: 150rem;  
+    }
+
  
 }
 
@@ -38,6 +43,8 @@
         @include respond(phone) {
             font-size: 4rem;
             margin-bottom: .5rem;
+            animation: none;
+            background-size: cover;
         }
            
         //  text-transform: uppercase;

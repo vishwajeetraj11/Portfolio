@@ -180,6 +180,10 @@ body {
   .header .row {
     max-width: 70rem; } }
 
+@media only screen and (max-width: 56.25em) {
+  .header .row {
+    max-width: 150rem; } }
+
 .header {
   height: 90vh;
   position: relative; }
@@ -203,7 +207,9 @@ body {
     @media only screen and (max-width: 37.5em) {
       .header__title {
         font-size: 4rem;
-        margin-bottom: .5rem; } }
+        margin-bottom: .5rem;
+        animation: none;
+        background-size: cover; } }
     .header__title ::selection {
       color: transparent;
       background-color: #fff; }
